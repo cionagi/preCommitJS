@@ -29,4 +29,9 @@ npm install --save-dev husky lint-staged
 
 ```
 
-
+```javascript
+ "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "precommit": "lint-staged"
+```
